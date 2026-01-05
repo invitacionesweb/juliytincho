@@ -3,7 +3,6 @@
     --color-secundario:#015460;
     --color-terciario:#015460;
     --font-principal:'MiTipografia', sans-serif;
-   
     --font-secundaria:'Montserrat', sans-serif;
     --font-sizepxs: 1em;
     --font-sizes: 1.6em;
@@ -59,10 +58,11 @@ header {
    position: relative;
 }
 header p {
-    font-size: var(--font-sizem);
+    font-size: 1.1rem;
     padding: 0;
+    letter-spacing: 2px;
     margin: 0;
-    font-family:var(--font-principal);
+    font-family:var(--font-secundaria);
     animation-name: texto;
     animation-duration: 5s;
 }
@@ -641,8 +641,6 @@ position: absolute; /* Se posiciona respecto al más cercano "relative" */
 .heart2 img {
     width: 100px;
 }
-
-
 
 .quote2 p {
     color:  var(--color-principal);
