@@ -302,19 +302,20 @@ position: absolute; /* Se posiciona respecto al más cercano "relative" */
 .quote2 {
     width: 100%;
     height: 50vh;
-   padding: 36px 0 0 0 ;
+   padding: 0 0 60px 0 ;
     background-image:url(./newimages/d.png) ;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 .quote2 h3 {
     
     color: var(--color-principal);
     -webkit-text-stroke: 2px solid black; 
     font-size: 2.2em;
+    
     font-weight: 100;
     text-align: center;
    
