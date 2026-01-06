@@ -283,6 +283,7 @@ position: absolute; /* Se posiciona respecto al más cercano "relative" */
     height: 50vh;
     background-image:url(./newimages/a.png) ;
     background-size: cover;
+    background-position: right;
     display: flex;
     flex-direction: column;
     align-items: center;
