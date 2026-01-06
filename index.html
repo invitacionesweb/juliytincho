@@ -60,6 +60,9 @@
           <div data-aos="fade-up" class="etiqueta">segundos</div>
         </div>
     </div>
+    <div class="quote3 foto1">
+      <!--<h3 data-aos="fade-up" >Que todas las noches <br> sean noches de boda</h3>-->
+ </div>
 <!--
       <H2 id="mensaje" class="mensaje-final title" style="display: none;">LLEGÓ EL DÍA</H2>
 
@@ -167,11 +170,11 @@ Pero si querés sumar un mimo a esta nueva etapa, podés ver nuestra mesa de reg
             </div>
         </div>
                 <div data-aos="fade-up"  class="accordion-item">
-            <button class="accordion-header">¿DÓNDE ESTACIONO?</button>
+            <button class="accordion-header">¿TE MANDO LAS FOTOS?</button>
             <div class="accordion-content">
-                <p>¡Sabemos que no querés andar dando vueltas!
-                    En el salón hay espacio para estacionar con comodidad.
+                <p>Las fiestas se viven tres veces, cuando las planeas, cuando las vivis y cuando las recordas, es por eso que te pedimos que al dia siguiente nos compartas todas las fotos y videos de la noche. 
                 </p> 
+          <a data-aos="fade-up" target="_blank" class="boton"  href="https://drive.google.com/drive/folders/12yXbg7hzf6ik1tqVeHeSwfsWQ4wVviKA?usp=sharing">COMPARTIR</a>
 
             </div>
         </div>
@@ -300,6 +303,26 @@ Pero si querés sumar un mimo a esta nueva etapa, podés ver nuestra mesa de reg
             alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
           }
       </script>
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach((header) => {
+      header.addEventListener("click", function () {
+        const item = this.parentElement;
+        item.classList.toggle("active");
+
+        // Cierra otros ítems si querés que solo se abra uno a la vez:
+        headers.forEach((otherHeader) => {
+          const otherItem = otherHeader.parentElement;
+          if (otherItem !== item) {
+            otherItem.classList.remove("active");
+          }
+        });
+      });
+    });
+  });
+</script>
 
       <script src="form.js"></script>
       <script src="reproductor.js"></script>
